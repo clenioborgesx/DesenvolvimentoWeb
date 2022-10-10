@@ -1,0 +1,96 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Allerta', sans-serif;
+}
+
+:root {
+    --azulescuro: #365ca7;
+    --azul: #3e6abe;
+    --preto: #171717;
+    --branco: #ffffff;
+    --cinza: #525c5a;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--cinza);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+nav ul button {
+    border: 1px solid var(--azulescuro);
+    background: var(--branco);
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+
+}
+
+nav ul button:hover {
+    transition: background, color 0.6s;
+    background: var(--azulescuro);
+    color: var(--branco);
+}
+
+.content.header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--preto);
+    border-radius: 8px;
+}
+
+.logo img {
+    position: relative;
+    max-width: 100%;
+    min-width: 30%;
+
+}
